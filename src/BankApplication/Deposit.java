@@ -1,7 +1,5 @@
 package BankApplication;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 import java.util.Scanner;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -82,6 +80,7 @@ class Deposit extends Balance{
 
         if (super.ACCOUNTNUMBER == 100006060) {
                 super.balance = super.balance + disAskAmountN;
+                currentBalance();
         }
     }
     }
