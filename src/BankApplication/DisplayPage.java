@@ -100,9 +100,6 @@ class DisplayPage {
 
         DisplayPage displayPage = new DisplayPage();
 
-
-        Withdraw withdraw = new Withdraw();
-
         // DISPLAY PAGE
         displayPage.welcomePage();
         displayPage.displayService();
