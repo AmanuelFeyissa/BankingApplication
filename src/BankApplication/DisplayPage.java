@@ -19,13 +19,13 @@ class DisplayPage {
         System.out.print("\t\t\t\t\tPLEASE ENTER YOUR Full NAME: ");
         String accHolderName = input1.nextLine();
         System.out.print("\t\t\t\t\tPLEASE ENTER YOUR ACCOUNT NUMBER: ");
-        double accHolderNum = input2.nextDouble();
+        long accHolderNum = input2.nextLong();
         System.out.println("\t\t\t\t\t**************************************************");
         System.out.println("\t\t\t\t\t--------------------------------------------------");
         System.out.println();
         System.out.println();
         System.out.println("\t\t\t\t\tWelcome " + toUpperCase(accHolderName));
-        System.out.print("\t\t\t\t\tYour Account Number: " + accHolderNum);
+        System.out.println("\t\t\t\t\tYour Account Number: " + accHolderNum);
         System.out.println();
         System.out.println();
     }
