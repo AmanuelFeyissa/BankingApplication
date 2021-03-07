@@ -2,7 +2,7 @@ package BankApplication;
 
 import java.util.Scanner;
 
-public class Withdraw {
+public class Withdraw extends Balance{
     /*
         TODO Display how much many they want to withdraw starting from 100 - 3000 100 200 500 700 1000 1200 1500 1800 2000 2300 2700 3000
         TODO or specify     DONE
@@ -26,42 +26,58 @@ public class Withdraw {
         System.out.println("12. 3000 Birr");
         System.out.println("Specify Birr: ");
     }
-    static void askWithdraw(){
+    void askWithdraw() {
         Scanner specifyNum = new Scanner(System.in);
+        Scanner option = new Scanner(System.in);
 
-            if(balance > 25){
-        double[] ch = new double[12];
-        if (ch[0] == 1) {
-            System.out.println("100 Birr has been Credited from your account.");
-        } else if (ch[1] == 2) {
-            System.out.println("200 Birr has been Credited from your account.");
-        } else if (ch[2] == 3) {
-            System.out.println("500 Birr has been Credited from your account.");
-        } else if (ch[3] == 4) {
-            System.out.println("700 Birr has been Credited from your account.");
-        } else if (ch[4] == 5) {
-            System.out.println("1000 Birr has been Credited from your account.");
-        } else if (ch[5] == 6) {
-            System.out.println("1200 Birr has been Credited from your account.");
-        } else if (ch[6] == 7) {
-            System.out.println("1500 Birr has been Credited from your account.");
-        } else if (ch[7] == 8) {
-            System.out.println("1800 Birr has been Credited from your account.");
-        } else if (ch[8] == 9) {
-            System.out.println("2000 Birr has been Credited from your account.");
-        } else if (ch[9] == 10) {
-            System.out.println("2300 Birr has been Credited from your account.");
-        } else if (ch[10] == 11) {
-            System.out.println("2700 Birr has been Credited from your account.");
-        } else if (ch[11] == 12) {
-            System.out.println("3000 Birr has been Credited from your account.");
-        } else if (ch[12] == 13) {
-            System.out.println("Specify a Number Please: ");
-            specifyNum.nextDouble();
-        } else {
-            System.out.println("Invalid input");
-        }
-    }else{
-                System.out.println("Your Balance is Insufficient.");
+        int valueOption = option.nextInt();
+        double specificNum = specifyNum.nextDouble();
+       // if (super.balance > 25 && ) {
+            double[] ch = new double[12];
+            switch (valueOption){
+                case 1:
+                    System.out.println("100 Birr has been Credited from your account.");
+                    break;
+                case 2:
+                    System.out.println("200 Birr has been Credited from your account.");
+                    break;
+                case 3:
+                    System.out.println("500 Birr has been Credited from your account.");
+                    break;
+                case 4:
+                    System.out.println("700 Birr has been Credited from your account.");
+                    break;
+                case 5:
+                    System.out.println("1000 Birr has been Credited from your account.");
+                    break;
+                case 6:
+                    System.out.println("1200 Birr has been Credited from your account.");
+                    break;
+                case 7:
+                    System.out.println("1500 Birr has been Credited from your account.");
+                    break;
+                case 8:
+                    System.out.println("1800 Birr has been Credited from your account.");
+                    break;
+                case 9:
+                    System.out.println("2000 Birr has been Credited from your account.");
+                    break;
+                case 10:
+                    System.out.println("2300 Birr has been Credited from your account.");
+                    break;
+                case 11:
+                    System.out.println("2700 Birr has been Credited from your account.");
+                    break;
+                case 12:
+                    System.out.println("3000 Birr has been Credited from your account.");
+                    break;
+                case 13:
+                    System.out.println("Specify a Number Please: " + specificNum);
+                    break;
+
+                default:
+                    System.out.println("Invalid input");
             }
+
+    }
 }
