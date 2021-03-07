@@ -4,7 +4,7 @@ import java.util.Scanner;
 
  public class DisplayPage {
 
-    public void welcomePage(){
+    public void welcomePage() {
         /* TODO put concatenation and name variable on LINE 17
            TODO put concatenation and Account number variable on LINE 18
          */
@@ -17,9 +17,10 @@ import java.util.Scanner;
         input1.nextLine();
         System.out.println("PLEASE ENTER YOUR ACCOUNT NUMBER");
         input2.nextDouble();
-        System.out.println("Welcome " + input1 );
-        System.out.println("Your Account Number: " + input2 );
-
+        System.out.println("Welcome " + input1);
+        System.out.println("Your Account Number: " + input2);
+    }
+    public void displayService(){
         System.out.println("Please Choose One Of The Letters To Use Our Services ");
         System.out.println("A : For Checking Your Current Balance ");
         System.out.println("B : To BankApplication.Deposit An Amount Of Money ");
