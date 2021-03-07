@@ -1,9 +1,5 @@
 package BankApplication;
-
-
-
 import java.util.Scanner;
-
 import static jdk.nashorn.internal.objects.NativeString.toUpperCase;
 
 class DisplayPage {
@@ -58,6 +54,7 @@ class DisplayPage {
                     Deposit depositAction = new Deposit();
                     depositAction.depositorInfo();
                     depositAction.askDepositAmount();
+                    break;
                 case 'C':
                     Withdraw withdraw = new Withdraw();
                     displayWithdraw();
@@ -75,26 +72,28 @@ class DisplayPage {
     }
     void displayWithdraw() {
 
-        System.out.println("Please choose from the given amounts below: ");
-        System.out.print("1. 100 Birr\t\t\t");
-        System.out.println("7. 1500 Birr");
+        System.out.println("\t\t\t\t\tPlease choose from the given amounts below: ");
+        System.out.print("\t\t\t\t\t1. 100 Birr\t\t\t");
+        System.out.println("\t\t\t\t\t7. 1500 Birr");
 
-        System.out.print("2. 200 Birr\t\t\t");
-        System.out.println("8. 1800 Birr");
+        System.out.print("\t\t\t\t\t2. 200 Birr\t\t\t");
+        System.out.println("\t\t\t\t\t8. 1800 Birr");
 
-        System.out.print("3. 500 Birr\t\t\t");
-        System.out.println("9. 2000 Birr");
+        System.out.print("\t\t\t\t\t3. 500 Birr\t\t\t");
+        System.out.println("\t\t\t\t\t9. 2000 Birr");
 
-        System.out.print("4. 700 Birr\t\t\t");
-        System.out.println("10. 2300 Birr");
+        System.out.print("\t\t\t\t\t4. 700 Birr\t\t\t");
+        System.out.println("\t\t\t\t\t10. 2300 Birr");
 
-        System.out.print("5. 1000 Birr\t\t");
-        System.out.println("11. 2700 Birr");
+        System.out.print("\t\t\t\t\t5. 1000 Birr\t\t");
+        System.out.println("\t\t\t\t\t11. 2700 Birr");
 
-        System.out.print("6. 1200 Birr\t\t");
-        System.out.println("12. 3000 Birr");
+        System.out.print("\t\t\t\t\t6. 1200 Birr\t\t");
+        System.out.println("\t\t\t\t\t12. 3000 Birr");
 
-        System.out.println("13.Specify Birr: ");
+        System.out.println("\t\t\t\t\t13.Specify Birr: ");
+        System.out.println();
+        System.out.print("\t\t\t\t\t>>>>>>>>>>>>>>>> ");
     }
 
     public static void main(String[] args){
@@ -105,7 +104,7 @@ class DisplayPage {
         Withdraw withdraw = new Withdraw();
 
         // DISPLAY PAGE
-       // displayPage.welcomePage();
+        displayPage.welcomePage();
         displayPage.displayService();
 
     }
