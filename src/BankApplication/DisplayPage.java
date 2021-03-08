@@ -38,7 +38,8 @@ class DisplayPage {
             System.out.println("\t\t\t\t\tA : For Checking Your Current Balance ");
             System.out.println("\t\t\t\t\tB : To Deposit An Amount Of Money ");
             System.out.println("\t\t\t\t\tC : To Withdraw An Amount Of Money ");
-            System.out.println("\t\t\t\t\tD : Exit");
+            System.out.println("\t\t\t\t\tD : Group Members");
+            System.out.println("\t\t\t\t\tE : Exit");
             System.out.print("\t\t\t\t\t>>>>>>>>>>>>>>>> ");
 
             Scanner opt = new Scanner(System.in);
@@ -61,13 +62,34 @@ class DisplayPage {
                     withdraw.askWithdraw();
                     break;
                 case 'D':
+                    System.out.println();
+                    System.out.println();
+                    System.out.println("\t\t\t\t\t--------------------------------------------------");
+                    System.out.println("\t\t\t\t\t**************************************************");
+                    System.out.println("\t\t\t\t\t\t\t\t\tGROUP MEMBERS ");
+                    System.out.println();
+                    System.out.println("\t\t\t\t\t\t Name\t\tId Number\t\tSection");
+                    System.out.println();
+                    System.out.println("\t\t\t\t\t Abel Beyene\t\tMICRO 13,101/19\t\tRD2CS1");
+                    System.out.println("\t\t\t\t\t Abenezer Worku\t\tMICRO 13,332/19\t\tRD2CS1");
+                    System.out.println("\t\t\t\t\t Amanuel Feyissa\tMICRO 13,065/19\t\tRD2CS1");
+                    System.out.println("\t\t\t\t\t Betelhem Berhanu\tMICRO 13,018/19\t\tRD2CS1");
+                    System.out.println("\t\t\t\t\t Kaleab Tadesse\t\tMICRO 13,051/19\t\tRD2CS1");
+                    System.out.println("\t\t\t\t\t Yonatan Molla\t\tMICRO 13,337/19\t\tRD2CS1");
+                    System.out.println();
+                    System.out.println("\t\t\t\t\t SUBMITTED TO: COMPUTER SCIENCE DEPARTMENT");
+                    System.out.println();
+                    System.out.println("\t\t\t\t\t**************************************************");
+                    System.out.println("\t\t\t\t\t--------------------------------------------------");
+                    break;
+                case 'E':
                     System.out.println("Thank You For Using Our Services. Good Day.");
                     break;
                 default:
                     System.out.println("Invalid Input");
 
             }
-        } while (serviceOption != 'D');
+        } while (serviceOption != 'E');
 
     }
     void displayWithdraw() {
