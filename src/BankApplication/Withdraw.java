@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Withdraw extends Balance {
 
     public void askWithdraw() {
-        double[] ch = new double[]{100, 200, 500, 700, 1000, 1200, 1500, 1800, 2000, 2300, 2700, 3000,5};
+        double[] ch = new double[]{100, 200, 500, 700, 1000, 1200, 1500, 1800, 2000, 2300, 2700, 3000,0};
 
         if ((super.balance > 25) && ((ch[0] <= super.balance) || (ch[1] <= super.balance) || (ch[2] <= super.balance)
                 || (ch[3] <= super.balance) || (ch[4] <= super.balance) || (ch[5] <= super.balance) || (ch[6] <= super.balance)
