@@ -14,10 +14,18 @@ class Deposit extends Balance{
 
         System.out.println("\t\t\t\t\t--------------------------------------------------");
         System.out.println("\t\t\t\t\t**************************************************");
-        System.out.print("\t\t\t\t\tEnter The Depositor Name(Your Name) : ");
-        depositorName.nextLine();
-        System.out.print("\t\t\t\t\tEnter The Depositor's Phone Number(Your Phone Number) : ");
-        depositorPhoneNum.nextDouble();
+        try {
+            System.out.print("\t\t\t\t\tEnter The Depositor Name(Your Name) : ");
+            depositorName.nextLine();
+        } catch (Exception e) {
+            System.out.println("WRONG INPUT OF A DEPOSITOR NAME");
+        }
+        try {
+            System.out.print("\t\t\t\t\tEnter The Depositor's Phone Number(Your Phone Number) : ");
+            depositorPhoneNum.nextDouble();
+        }catch (Exception e){
+            System.out.println("INVALID INPUT IN THE DEPOSITOR'S PHONE NUMBER SECTION");
+        }
         System.out.println("\t\t\t\t\t--------------------------------------------------");
         System.out.println("\t\t\t\t\t**************************************************");
         System.out.println();
