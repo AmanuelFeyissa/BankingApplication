@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-
+//Will finish the project on 2023
 class Deposit extends Balance{
 
     public void depositorInfo(){
