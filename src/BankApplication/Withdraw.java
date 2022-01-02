@@ -1,7 +1,7 @@
 package BankApplication;
 
 import java.util.Scanner;
-
+// Plan for next year
 public class Withdraw extends Balance {
 
     public void askWithdraw() {
