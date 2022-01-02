@@ -1,7 +1,7 @@
 package BankApplication;
 import java.util.Scanner;
 import static jdk.nashorn.internal.objects.NativeString.toUpperCase;
-
+// Rewrite everything next year
 class DisplayPage {
 
     public void welcomePage() {
